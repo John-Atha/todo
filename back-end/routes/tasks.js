@@ -18,11 +18,14 @@ router.post('/', async (req, res) => {
 });
 
 router.get('/', async (req, res) => {
-
-    console.log('Asked for all the tasks.');
-    const tasks = await Task.find();
+    let tasks = [];
+    if (req.query.state) {
+        tasks = await Task.find({ state: req.query.state });
+    }
+    else {
+        tasks = await Task.find();
+    }
     res.send(tasks);
-
 });
 
 router.get('/:id', async(req, res) => {
