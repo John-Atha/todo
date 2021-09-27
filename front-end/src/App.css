@@ -1,0 +1,20 @@
+.App {
+  text-align: left;
+  padding: 5px;
+}
+
+.center-content {
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.margin {
+  margin: 5px;
+}
+
+.flex-layout {
+  display: flex;
+  flex-flow: row wrap;
+}

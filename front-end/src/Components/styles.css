@@ -1,0 +1,89 @@
+.tasks-container {
+    width: 100%;
+    overflow-x: scroll;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    min-height: 150px;
+}
+
+.task-state {
+    font-style: italic;
+}
+
+.Done-lane {
+    background-color: rgb(206, 238, 206);
+}
+.Done-task {
+    background-color: rgb(93, 201, 93);
+    opacity: 0.6;
+}
+
+.Todo-lane {
+    background-color: rgb(215, 235, 245);
+}
+.Todo-task {
+    background-color: lightblue;
+}
+
+.Running-lane {
+    background-color: rgb(249, 250, 229);
+}
+.Running-task {
+    background-color: rgb(248, 248, 182);
+}
+
+.task-container {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 1px 2px;
+    min-height: 50px;
+    width: 200px;
+}
+
+.task-container:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border-width: 3px;
+}
+
+.task-date {
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.task-title {
+    margin: 2px;
+}
+
+.task-pop-up {
+    position: absolute;
+    width: 90vw;
+    height: 80vh;
+    margin-left: 5vw;
+    margin-top: 0;
+    border: 1px solid blue;
+    border-radius: 7px;
+    padding: 2px;
+    z-index: 2;
+    background-color: white;
+}
+
+.task-text {
+    width: 95%;
+    margin-left: 2.5%;
+    border: 1px solid blue;
+    border-radius: 7px;
+    padding: 5px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.state-select {
+    width: 150px;
+    color: black;
+    padding: 2px;
+}
+
+.error-message {
+    color: red;
+}
